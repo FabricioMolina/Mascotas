@@ -5,13 +5,16 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: #D4D4D4;
+    background-image: url(Gatos/WhatsApp\ Image\ 2021-05-02\ at\ 18.15.18.jpeg);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .principal{
     background-color: rgb(255, 255, 255);
     margin-right: 5%;
     margin-left: 5%;
+}
+.selec{
+    background-color: aqua;
 }
 .subt{
     text-align: center;
@@ -47,5 +50,7 @@ ul.menu li a{
 }
 .secciones article{
     padding: 20px;
+}
+.secciones article a{
     text-align: justify;
 }

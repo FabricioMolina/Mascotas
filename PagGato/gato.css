@@ -6,6 +6,7 @@ body{
     height: 100%;
     width: 100%;
     background-image: url(Gatos/WhatsApp\ Image\ 2021-05-02\ at\ 18.15.18.jpeg);
+    background-size: 300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .principal{

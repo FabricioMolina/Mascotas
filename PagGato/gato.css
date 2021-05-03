@@ -15,6 +15,10 @@ body .principal{
     margin-right: 5%;
     margin-left: 5%;
 }
+.principal #logo{
+    float: right;
+    display: flex;
+}
 .selec{
     background-color: aqua;
 }

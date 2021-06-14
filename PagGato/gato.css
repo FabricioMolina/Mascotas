@@ -7,7 +7,8 @@ body{
     width: 100%;
     background-image: url(Gatos/WhatsApp\ Image\ 2021-05-02\ at\ 18.15.18.jpeg);
     background-size: 200px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Helvetica Neue,helvetica,arial,sans-serif;
+    font-size: 15px;
 }
 body .principal{
     background-color: rgb(255, 255, 255);
@@ -32,7 +33,7 @@ ul.menu{
     display: flex;
 }
 ul.menu li{
-    width: 24%;
+    width: 34%;
     text-align: center;
 }
 ul.menu li a{
@@ -45,6 +46,16 @@ ul.menu li a{
 #inicio .centerimg{
     display: block;
     margin: auto;
+    width: 800px;
+    height: 500px;
+    border-radius: 100px;
+}
+#consejos .centerimg{
+    display: flex;
+   float: left;
+    width: 700px;
+    height: 400px;
+    border-radius: 100px;
 }
 #inicio p{
     text-align: center;
@@ -59,4 +70,104 @@ ul.menu li a{
 }
 .secciones article a{
     text-align: justify;
+}
+.secciones article .edad{
+        height: 500px;
+        width: 500px;
+        border-radius: 800px;
+}
+.centrar{
+    text-align: center;
+}
+.secciones article form{
+    margin-left: 25%;
+    font-size: 20px;
+    margin-right: 35%;
+}
+#form{
+    text-align: center;
+}
+#yo{
+    text-align: left;
+}
+.resal{
+    font-weight: bold;
+}
+#cachorro{
+    border-style: double;
+    border-color: brown;
+    border-radius: 10px;
+    margin: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+.sub-img{
+    display: block;
+    margin: auto;
+    border-radius: 100px;
+}
+#joven{
+    border-style: double;
+    border-color: cornflowerblue;
+    border-radius: 10px;
+    margin: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#adulto{
+    border-style: double;
+    border-color: crimson;
+    border-radius: 10px;
+    margin: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#enlaces{
+    padding: 10px 0px;
+    border-style: double;
+    display: block;
+    background-color: darkgray;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 710px;
+    margin-right: 50px;
+    border-radius: 10px;
+    
+}
+#enlaces ol li{
+    list-style: none;
+}
+#enlaces ol li .sub-ol{
+    margin-left: 20px;
+}
+ol,ul{
+    list-style: none;
+}
+#enlaces ol a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    
+    padding: 10px 0px;
+}
+#prev-princi{
+    border-style: double;
+    border-color: blueviolet;
+    margin-top: 50px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+#prev-hig{
+    border-style: double;
+    border-color: chocolate;
+}
+#prev-alim{
+    border-style: double;
+    border-color: violet;
+}
+#prev-call{
+    border-style: double;
+    border-color: greenyellow;
 }

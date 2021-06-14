@@ -9,6 +9,9 @@ body{
     background-size: 200px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+ul{
+    list-style: none;
+}
 body .principal{
     background-color: rgb(255, 255, 255);
 
@@ -32,7 +35,7 @@ ul.menu{
     display: flex;
 }
 ul.menu li{
-    width: 24%;
+    width: 34%;
     text-align: center;
 }
 ul.menu li a{
@@ -59,4 +62,99 @@ ul.menu li a{
 }
 .secciones article a{
     text-align: justify;
+}
+#pri{
+    border-style: double;
+    border-color: indigo;
+}
+#cachorro{
+    padding-left: 10px;
+    padding-right: 10px; 
+    border-style: double;
+    border-color: gold;
+}
+#cachorro .centerimg{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    border-radius: 100px;
+    
+}
+#adol{
+    padding-left: 10px;
+    padding-right: 10px; 
+    border-style: double;
+    border-color: dodgerblue;
+    text-align: center;
+}
+#adol .centerimg{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    border-radius: 100px;
+}
+#adul{
+    padding-left: 10px;
+    padding-right: 10px; 
+    border-style: double;
+    border-color: darkred;
+    text-align: center;
+}
+#adul .centerimg{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    border-radius: 100px;
+}
+.s{
+    font-weight: bold;
+}
+#crianza #cimg{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    border-radius: 100px;
+}
+#enlaces{
+    border-radius: 10px;
+    border-style: double;
+    background-color: gray;
+    float: left;
+}
+#enlaces a{
+    text-decoration: none;
+    color: white;
+}
+ol,ul{
+    list-style: none;
+
+}
+#prev{
+    margin-top: 40px;
+    border-style: double;
+    border-color: cyan;
+}
+#hig{
+    border-style: double;
+}
+.cent{
+    display: block;
+    margin: auto;
+    border-radius: 100px;
+}
+#prev-pelig{
+    border-style: double;
+    border-color: red;
+}
+#prev-alim{
+    border-style: double;
+    border-color: green;
+}
+#prev-idf{
+    border-style: double;
+    border-color: blueviolet;
 }

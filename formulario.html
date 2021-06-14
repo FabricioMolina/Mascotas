@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Formulario</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='formulario.css'>
+    <script src="https://kit.fontawesome.com/4e8cac14a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="principal">
+    <ul class="menu">
+        <a href="#form" onclick="ver()"><li id="for" style="background-color: cyan;">Formulario</a></li>
+        <a href="#pag" onclick="ver1()"><li id="pa">Ver comentario</a></li>
+    </ul>
+
+    <div id="form">
+    <h1>Formulario</h1>
+    <form name="formulario" onsubmit="enviar(event)">
+        <ul>
+            <li>
+                <label for="nombre">Usuario:</label>
+                <input type="text" id="nombre" name="nombre" onfocus="return enviadoN()" maxlength="30"
+                      placeholder="Nombre">
+            </li>
+
+
+            <li>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" onfocus="return enviadoM()" maxlength="200"
+                    placeholder="Mensaje"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Envíe su mensaje</button>
+            </li>
+        </div>
+
+    </form>
+
+    <div style="margin-left: 32%;">
+        <ol id="error">
+
+        </ol>
+    </div>
+
+    <div id="pag">
+        <ul id="correcto">
+
+        </ul>
+    </div>
+    
+        <p style="text-align: center; margin-top: 25%; color: white;">¿Te interesa volver al menu de selección? Presiona aquí:<span><a style="text-decoration: none; color: white;" href="index.html"><i class="fas fa-paw"></i></a></span> </p>
+</div>
+    <script>
+        var i = 0;
+        function ver1(){
+            var aux1 = document.getElementById("pag");
+            pag.style.visibility = "visible"         
+            var aux = document.getElementById("form");       
+               aux.style.visibility = "hidden";
+               document.getElementById("pa").style.backgroundColor = "cyan";
+               document.getElementById("for").style.backgroundColor = ("gray");
+               
+        }
+        function ver(){
+            
+            var aux = document.getElementById("form");       
+               aux.style.visibility = "visible";
+               var aux1 = document.getElementById("pag");
+            pag.style.visibility = "hidden"
+            document.getElementById("for").style.backgroundColor = "cyan";
+               document.getElementById("pa").style.backgroundColor = "gray";
+        }
+        function errorNombre() {
+            document.getElementById("nombre").style.backgroundColor = "red";
+        }
+        function errorMensaje() {
+            document.getElementById("mensaje").style.backgroundColor = "red";
+        }
+
+        function enviadoN() {
+            document.getElementById("nombre").style.backgroundColor = "white";
+        }
+
+     
+
+        function enviadoM() {
+            document.getElementById("mensaje").style.backgroundColor = "white";
+        }
+
+        
+
+        function enviar(e) {
+            e.preventDefault();
+            var errores = 0;
+            document.getElementById("error").innerHTML = "";
+            var nombreCorrecto = document.createElement("li")
+            var mensajeCorrecto = document.createElement("li")
+
+            var errorConNombre = document.createElement("li");
+            var errorConMensaje = document.createElement("li");
+            var enviado = document.createElement("li");
+            if (nombre.value == "" || nombre.value.length > 30 || nombre.value.length <= 2) {
+                errorConNombre.innerText = "El nombre tiene que contener entre 3 y 30 caracteres." ;
+                errorNombre();
+                nombre.value = "";
+                document.querySelector("#error").appendChild(errorConNombre);
+                errores++
+            }
+
+             if (mensaje.value.length < 1) {
+                errorConMensaje.innerText = "La casilla de mensaje esta vacia.";
+                errorMensaje();
+                document.querySelector("#error").appendChild(errorConMensaje);
+                errores++
+            }if(errores == 0) {        
+                nombreCorrecto.innerText = "Nombre:" + nombre.value;
+                mensajeCorrecto.innerText = "Mensaje:" + mensaje.value;
+                document.querySelector("#correcto").appendChild(nombreCorrecto);
+                document.querySelector("#correcto").appendChild(mensajeCorrecto);
+                enviadoN();
+                enviadoM();
+                if(document.getElementById("for").style.backgroundColor == "cyan"){
+                    document.getElementById("pag").style.visibility = "hidden"
+                }else{
+                    document.getElementById("pag").style.visibility = "visible"
+                }
+                
+               
+            }
+            return false;
+        }
+
+        function validarNombre(nombre) {
+            for (i = 0; i < nombre.length; i++) {
+                if (!(nombre.charCodeAt(i) >= 65 && nombre.charCodeAt(i) <= 90 ||
+                    nombre.charCodeAt(i) >= 97 && nombre.charCodeAt(i) <= 122 ||
+                    nombre.charCodeAt(i) == 32)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
